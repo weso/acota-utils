@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>acota-utils</name>
+	<comment>acota-utils, library 0.3.7-SNAPSHOT. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+	<projects>
+		<project>acota-core</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.cenqua.clover.core.prejavabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.cenqua.clover.core.postjavabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.cenqua.clover.core.clovernature</nature>
+	</natures>
+</projectDescription>

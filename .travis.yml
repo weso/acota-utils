@@ -1,0 +1,22 @@
+language: java
+
+jdk:
+  - openjdk6
+  - openjdk7
+  - oraclejdk7
+
+before_script:
+  - 'wget 156.35.82.101:7000/downloads/acota/utils/travis/maven/addServer.py'
+
+env:
+  global:
+    - SONATYPE_USERNAME=cesarla
+    - secure: "TazWYVOrcfxB1E7Pmdjf+cCv2XradjLHbOw320/x0D8xsxOfdAo5tbBjUL6A\nGU18ILdrdqnF3GM4DhwouyMDQoDNfVmgjDXhs8VgVYbn5E3mXILLWvxqkzJJ\nZS9lXfNHBHTzS5R1oXBC/BCGx61Z7SsjO+R67QRyRExg3RTn9M0="
+
+after_success:
+  - python addServer.py
+  - mvn clean deploy --settings ~/.m2/mySettings.xml
+
+notifications:
+  email:
+    - sisa989@gmail.com
