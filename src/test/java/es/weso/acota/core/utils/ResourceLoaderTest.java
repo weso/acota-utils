@@ -19,7 +19,6 @@ import org.junit.Test;
  */
 public class ResourceLoaderTest {
 
-	
 	private ResourceLoader resourceLoader;
 	
 	@Before
