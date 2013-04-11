@@ -11,8 +11,7 @@ Acota-utils is a autoconfigure library for [ACOTA (Automatic Collaborative Taggi
 Just include acota-utils in the classpath, and acota will reconfigure itself, loading all
 the required files from acota-utils.
 
-**Important**
-Acota-utils makes use of  the default temporary directory.
+**Important:** Acota-utils makes use of  the default temporary directory.
 
 ## License
 
