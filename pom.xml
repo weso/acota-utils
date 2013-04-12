@@ -47,7 +47,7 @@
 		<connection>scm:git:git@github.com:weso/acota-utils.git</connection>
 		<url>scm:git:git@github.com:weso/acota-utils.git</url>
 		<developerConnection>scm:git:git@github.com:weso/acota-utils.git</developerConnection>
-	  <tag>0.3.7</tag>
+		  <tag>0.3.7</tag>
   </scm>
 	<dependencies>
 		<!-- For testing purposes -->
