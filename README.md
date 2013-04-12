@@ -1,7 +1,7 @@
 <img src="http://weso.es/img/logo_acota_850.png">
 # ACOTA:  Automatic Collaborative Tagging 
-Master: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=master)](https://travis-ci.org/weso/acota-utils)
-Develop: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=develop)](https://travis-ci.org/weso/acota-utils)
+Master: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=master)](https://github.com/weso/acota-utils/tree/master)
+Develop: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=develop)](https://github.com/weso/acota-utils/tree/develop)
 
 
 ## What is it? ##
@@ -12,6 +12,29 @@ Just include acota-utils in the classpath, and acota will reconfigure itself, lo
 the required files from acota-utils.
 
 **Important:** Acota-utils makes use of  the default temporary directory.
+
+## Download ##
+The current version of acota is **0.3.7**, you can download it from:
+
+### For Maven Users
+Acota-Core is available in Maven Central:
+ ```
+  <dependency>
+    <groupId>es.weso</groupId>
+    <artifactId>acota-utils</artifactId>
+    <version>0.3.7</version>
+ </dependency>
+ ```
+ Looking for SNAPSHOTS?
+* [SNAPSHOTS](https://oss.sonatype.org/content/repositories/snapshots/es/weso/acota-utils "Acota-utils SNAPSHOTS Repository")
+
+### For Non Maven Users
+Acota-bundle includes all required dependancies:
+
+ * [acota-utils-0.3.7.jar](http://156.35.82.101:7000/downloads/acota/0.3.7/utils/acota-utils-0.3.7.jar "Download acota-utils-0.3.7.jar")
+
+
+Lookin
 
 ## License
 

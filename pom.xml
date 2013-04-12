@@ -24,9 +24,11 @@
 	</organization>
 	<developers>
 		<developer>
+			<id>cesarla</id>
 			<name>César Luis Alvargonzález</name>
-			<organization>WESO</organization>
+			<email>info@cesarla.com</email>
 			<url>http://www.cesarla.com</url>
+			<organization>WESO</organization>
 			<organizationUrl>http://www.weso.es</organizationUrl>
 			<roles>
 				<role>architect</role>
@@ -35,17 +37,18 @@
 			</roles>
 		</developer>
 	</developers>
+	<distributionManagement>
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</repository>
+	</distributionManagement>
 	<scm>
 		<connection>scm:git:git@github.com:weso/acota-utils.git</connection>
 		<url>scm:git:git@github.com:weso/acota-utils.git</url>
 		<developerConnection>scm:git:git@github.com:weso/acota-utils.git</developerConnection>
 	</scm>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
 	<dependencies>
 		<!-- For testing purposes -->
 		<dependency>
