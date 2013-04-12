@@ -3,7 +3,7 @@
 	<groupId>es.weso</groupId>
 	<artifactId>acota-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>0.3.7-SNAPSHOT</version>
+	<version>0.3.7</version>
 	<name>acota-utils</name>
 	<description>acota-utils, library ${project.version}</description>
 	<url>https://github.com/Cesarla/ACOTA/</url>
@@ -47,7 +47,8 @@
 		<connection>scm:git:git@github.com:weso/acota-utils.git</connection>
 		<url>scm:git:git@github.com:weso/acota-utils.git</url>
 		<developerConnection>scm:git:git@github.com:weso/acota-utils.git</developerConnection>
-	</scm>
+	  <tag>0.3.7</tag>
+  </scm>
 	<dependencies>
 		<!-- For testing purposes -->
 		<dependency>
