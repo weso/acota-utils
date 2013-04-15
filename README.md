@@ -1,7 +1,7 @@
 <img src="http://weso.es/img/logo_acota_850.png">
 # ACOTA:  Automatic Collaborative Tagging 
-Master: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=master)](https://github.com/weso/acota-utils/tree/master)
-Develop: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=develop)](https://github.com/weso/acota-utils/tree/develop)
+Master: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=master)](https://travis-ci.org/weso/acota-utils)
+Develop: [![Build Status](https://travis-ci.org/weso/acota-utils.png?branch=develop)](https://travis-ci.org/weso/acota-utils)
 
 
 ## What is it? ##
@@ -11,7 +11,7 @@ Acota-utils is a autoconfigure library for [ACOTA (Automatic Collaborative Taggi
 Just include acota-utils in the classpath, and acota will reconfigure itself, loading all
 the required files from acota-utils.
 
-**Important:** Acota-utils makes use of  the default temporary directory.
+**Important:** Acota-utils makes use of the default temporary directory.
 
 ## Download ##
 The current version of acota is **0.3.7**, you can download it from:
@@ -32,9 +32,6 @@ Acota-Core is available in Maven Central:
 Acota-bundle includes all required dependancies:
 
  * [acota-utils-0.3.7.jar](http://156.35.82.101:7000/downloads/acota/0.3.7/utils/acota-utils-0.3.7.jar "Download acota-utils-0.3.7.jar")
-
-
-Lookin
 
 ## License
 
