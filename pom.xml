@@ -3,10 +3,10 @@
 	<groupId>es.weso</groupId>
 	<artifactId>acota-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>0.3.8-SNAPSHOT</version>
+	<version>0.3.7</version>
 	<name>acota-utils</name>
 	<description>acota-utils, library ${project.version}</description>
-	<url>https://github.com/Cesarla/ACOTA/</url>
+	<url>https://github.com/weso/acota-utils</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -36,18 +36,11 @@
 			</roles>
 		</developer>
 	</developers>
-	<distributionManagement>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</repository>
-	</distributionManagement>
 	<scm>
 		<connection>scm:git:git@github.com:weso/acota-utils.git</connection>
 		<url>scm:git:git@github.com:weso/acota-utils.git</url>
 		<developerConnection>scm:git:git@github.com:weso/acota-utils.git</developerConnection>
-		  <tag>0.3.7</tag>
+	  <tag>0.3.7</tag>
   </scm>
 	<dependencies>
 		<!-- For testing purposes -->
@@ -106,7 +99,7 @@
 						</goals>
 						<configuration>
 							<pomFileName>
-								acota-core/pom.xml
+								acota-utils/pom.xml
 							</pomFileName>
 						</configuration>
 					</execution>
