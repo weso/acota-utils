@@ -28,19 +28,19 @@ public class ResourceLoader implements ExternalizableConfiguration {
 		this.configuration = new PropertiesConfiguration();
 		try {
 			configuration.addProperty("opennlp.es.pos",
-					loadTmpFile("resources/open_nlp/es/", "SpanishPOS.bin"));
+					loadTmpFile("open_nlp/es/", "SpanishPOS.bin"));
 			configuration.addProperty("opennlp.es.sent",
-					loadTmpFile("resources/open_nlp/es/", "SpanishSent.bin"));
+					loadTmpFile("open_nlp/es/", "SpanishSent.bin"));
 			configuration.addProperty("opennlp.es.tok",
-					loadTmpFile("resources/open_nlp/es/", "SpanishTok.bin"));
+					loadTmpFile("open_nlp/es/", "SpanishTok.bin"));
 			configuration.addProperty("opennlp.en.pos",
-					loadTmpFile("resources/open_nlp/en/", "EnglishPOS.bin"));
+					loadTmpFile("open_nlp/en/", "EnglishPOS.bin"));
 			configuration.addProperty("opennlp.en.sent",
-					loadTmpFile("resources/open_nlp/en/", "EnglishSent.bin"));
+					loadTmpFile("open_nlp/en/", "EnglishSent.bin"));
 			configuration.addProperty("opennlp.en.tok",
-					loadTmpFile("resources/open_nlp/en/", "EnglishTok.bin"));
+					loadTmpFile("open_nlp/en/", "EnglishTok.bin"));
 			configuration.addProperty("wordnet.en.dict",
-					loadTmpDirectory("resources/wordnet_30/en/", "dict/"));
+					loadTmpDirectory("wordnet_30/en/", "dict/"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -55,25 +55,6 @@ public class ResourceLoader implements ExternalizableConfiguration {
 	}
 
 	private String loadTmpFile(String path, String name) throws IOException {
-		/*File tmpFile = File.createTempFile(name, ".tmp");
-		tmpFile.deleteOnExit();
-		OutputStream out = new FileOutputStream(tmpFile);
-
-		InputStream inputStream = this.getClass().getClassLoader()
-				.getResourceAsStream(path + name);
-
-		int read = 0;
-		byte[] bytes = new byte[1024];
-		try {
-			while ((read = inputStream.read(bytes)) != -1) {
-				out.write(bytes, 0, read);
-			}
-			inputStream.close();
-		} finally {
-			out.flush();
-			out.close();
-		}
-		return tmpFile.getAbsolutePath().toString();*/
 		File tmpDir = createTempDir();
 		tmpDir.deleteOnExit();
 		
@@ -91,7 +72,7 @@ public class ResourceLoader implements ExternalizableConfiguration {
 
 		Properties prop = new Properties();
 		prop.load(this.getClass().getClassLoader()
-				.getResourceAsStream("resources/inner.acota.utils.properties"));
+				.getResourceAsStream("inner.acota.utils.properties"));
 
 		String[] files = ((String) prop.get("wordnet_files")).split(",");
 		for (String file : files) {
